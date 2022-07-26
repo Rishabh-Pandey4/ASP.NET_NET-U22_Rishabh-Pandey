@@ -1,0 +1,36 @@
+﻿@using Task1.Models
+@model  List<Emp>
+
+<h3>List of all Employees</h3>
+<hr/>
+
+<a href="/home/Create">Create New</a>
+
+<table border="2" width="900">
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee Job</th>
+        <th>Employee Salary</th>
+        <th>Employee Department No</th>
+        <th></th>
+    </tr>
+
+    @foreach(Emp Employee in Model)
+    {
+         <tr>
+            <td>@Employee.Empid</td>
+            <td>@Employee.Ename</td>
+            <td>@Employee.Job</td>
+            <td>@Employee.Salary</td>
+            <td>@Employee.Deptno</td>
+            <td>
+                <a href="/home/Details/@Employee.Empid">Details</a> |
+                <a href="/home/Edit/@Employee.Empid">Edit</a> |
+                <a href="/home/Delete/@Employee.Empid">Delete</a>  
+            </td>
+         </tr>
+    }
+
+   
+</table>

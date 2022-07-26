@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h3>Add New Employee</h3>
+
+<form  action="/home/Create" method="post">
+    <label>Employee Id  : </label>
+    <input name="Empid" type="text" />
+    <br/><br/>
+
+    <label>Employee Name  : </label>
+    <input name="Ename" type="text" />
+    <br/><br/>
+
+
+     <label>Employee Job</label>
+    <input name="Job" type="text" />
+    <br/><br/>
+
+    <label>Employee Salary</label>
+    <input name="Salary" type="text" />
+    <br/><br/>
+
+    <label>Employee Department No.</label>
+    <input name="Deptno" type="text" />
+    <br/><br/>
+
+    <input type="submit" value="Create" />
+</form>
+
+
+@{
+    if(ViewBag.RequestType == "POST")
+    {
+        <h6>@ViewBag.ErrorMessage</h6>
+    }
+}

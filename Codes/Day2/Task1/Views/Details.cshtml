@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@using Task1.Models
+@model  Emp
+
+
+<h3>Details of the Employee</h3>
+
+
+<div>
+    Employee Id  :  @Model.Empid  <br/>
+    Employee Name  :  @Model.Ename  <br/>
+    Employee Job  :  @Model.Job<br/>
+    Employee Salary  :  @Model.Salary<br/>
+    Employee Department No:  @Model.Deptno<br/>
+</div>
+
+<hr/>
+ <a href="/home/Index">Back to List</a>
