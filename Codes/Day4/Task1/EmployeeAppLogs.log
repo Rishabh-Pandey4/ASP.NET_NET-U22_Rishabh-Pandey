@@ -1,0 +1,119 @@
+INFO  02:45:12 Now listening on: https://localhost:7291
+INFO  02:45:12 Now listening on: http://localhost:5291
+INFO  02:45:12 Application started. Press Ctrl+C to shut down.
+INFO  02:45:12 Hosting environment: Development
+INFO  02:45:12 Content root path: C:\Users\Administrator\Desktop\ASP.NET_NET-U22_Rishabh Pandey\Day3\Task1\Task1\
+INFO  02:45:14 Index Action is Processed
+INFO  02:45:18 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:45:21 Executed DbCommand (190ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+INFO  02:46:15 Delete Action[GET] is Processed
+INFO  02:46:15 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:17 Executed DbCommand (183ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+INFO  02:46:19 Delete Confirmation is Processed
+INFO  02:46:19 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:19 Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+INFO  02:46:20 Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+WHERE [EmployeeId] = @p0;
+SELECT @@ROWCOUNT;
+INFO  02:46:20 Index Action is Processed
+INFO  02:46:20 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:20 Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+INFO  02:46:22 Create Action[GET] is Processed
+INFO  02:46:45 Create Action[POST] is Processed
+INFO  02:46:45 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:45 Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Deptno], [Ename], [Job], [Salary])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [EmployeeId]
+FROM [Employees]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();
+INFO  02:46:45 Index Action is Processed
+INFO  02:46:45 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:45 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+INFO  02:46:49 Details Action is Processed
+INFO  02:46:49 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:49 Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+WHERE [e].[EmployeeId] = @__p_0
+INFO  02:46:52 Index Action is Processed
+INFO  02:46:52 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:46:52 Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+INFO  02:46:56 Get Employee by Job Action[GET] is Processed
+INFO  02:47:00 Get Employee by Job Action[POST] is Processed
+INFO  02:47:00 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  02:47:00 Executed DbCommand (1ms) [Parameters=[@__job_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+WHERE [e].[Job] = @__job_0
+INFO  03:13:37 Now listening on: https://localhost:7291
+INFO  03:13:37 Now listening on: http://localhost:5291
+INFO  03:13:37 Application started. Press Ctrl+C to shut down.
+INFO  03:13:37 Hosting environment: Development
+INFO  03:13:37 Content root path: C:\Users\Administrator\Desktop\ASP.NET_NET-U22_Rishabh Pandey\Day3\Task1\Task1\
+INFO  03:13:39 Index Action is Processed
+INFO  03:13:43 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  03:13:47 Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+INFO  03:22:17 Now listening on: https://localhost:7291
+INFO  03:22:17 Now listening on: http://localhost:5291
+INFO  03:22:17 Application started. Press Ctrl+C to shut down.
+INFO  03:22:17 Hosting environment: Development
+INFO  03:22:17 Content root path: C:\Users\Administrator\Desktop\ASP.NET_NET-U22_Rishabh Pandey\Day3\Task1\Task1\
+ERROR 03:22:19 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'log4net.ILog' while attempting to activate 'Task1.Filters.CustomExceptionFilter'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method1(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.TypeFilterAttribute.CreateInstance(IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.ProvideFilter(FilterProviderContext context, FilterItem filterItem)
+   at Microsoft.AspNetCore.Mvc.Filters.DefaultFilterProvider.OnProvidersExecuting(FilterProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.CreateUncachedFiltersCore(IFilterProvider[] filterProviders, ActionContext actionContext, List`1 filterItems)
+   at Microsoft.AspNetCore.Mvc.Filters.FilterFactory.GetAllFilters(IFilterProvider[] filterProviders, ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass10_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  03:26:00 Now listening on: https://localhost:7291
+INFO  03:26:00 Now listening on: http://localhost:5291
+INFO  03:26:00 Application started. Press Ctrl+C to shut down.
+INFO  03:26:01 Hosting environment: Development
+INFO  03:26:01 Content root path: C:\Users\Administrator\Desktop\ASP.NET_NET-U22_Rishabh Pandey\Day3\Task1\Task1\
+INFO  03:26:02 Index Action is Processed
+INFO  03:26:06 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  03:26:09 Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+ERROR 03:26:19 Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+INFO  03:40:50 Now listening on: https://localhost:7291
+INFO  03:40:50 Now listening on: http://localhost:5291
+INFO  03:40:50 Application started. Press Ctrl+C to shut down.
+INFO  03:40:50 Hosting environment: Development
+INFO  03:40:50 Content root path: C:\Users\Administrator\Desktop\ASP.NET_NET-U22_Rishabh Pandey\Day3\Task1\Task1\
+INFO  03:40:52 Index Action is Processed
+INFO  03:40:56 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  03:41:00 Executed DbCommand (213ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Ename], [e].[Job], [e].[Salary]
+FROM [Employees] AS [e]
+ERROR 03:41:08 Controller Name: Employee
+ERROR 03:41:08 Action Name: Index
+ERROR 03:41:08 Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
