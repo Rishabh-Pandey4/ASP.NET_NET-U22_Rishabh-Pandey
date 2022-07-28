@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Task1.Models.Employee>
+
+@{
+    ViewData["Title"] = "GetEmpsByDeptno";
+}
+
+<h3>Get Employee Information based on Department Number</h3><br /><br />
+
+<form action="/Employee/GetEmpsByDeptno" method="post">
+    <label>Enter Department Number</label>
+    <input name="dno" type="text" />
+    <input type="submit" value="Submit" />
+</form>
+<br /><br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ename)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Job)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deptno)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @{
+
+            if(!(Model is null))
+            {
+                foreach (var item in Model) {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ename)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Job)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Salary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Deptno)
+                    </td>
+                </tr>
+
+                }
+            }
+        }
+
+    </tbody>
+</table>
